@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="color-container">
+    <div class="color-block" style="background-color: orange;" onclick="changeColor('pink')"></div>
+    <div class="color-block" style="background-color: pink;" onclick="changeColor('blue')"></div>
+    <div class="color-block" style="background-color: blue;" onclick="changeColor('green')"></div>
+  </div>
+
+  <dialog id="colorDialog">
+    <p id="message"></p>
+    <button onclick="closeDialog()">Close</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
